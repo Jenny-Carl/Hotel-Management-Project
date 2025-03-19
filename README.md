@@ -1,1 +1,1 @@
-# Hotel-Management-Project_CSI2532
+# Hotel Management Project

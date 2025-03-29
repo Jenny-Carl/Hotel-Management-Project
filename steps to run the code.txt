@@ -1,0 +1,57 @@
+PS C:\Users\e-hotelsV4> npm run dev
+
+'next' is not recognized as an internal or external command,
+operable program or batch file.
+
+PS C:\Users\e-hotelsV4> npm install next react react-dom
+npm ERR! code ERESOLVE
+npm ERR! ERESOLVE unable to resolve dependency tree
+npm ERR!
+npm ERR! While resolving: my-v0-project@0.1.0
+npm ERR! Found: react@19.1.0
+npm ERR! node_modules/react
+npm ERR!   react@"^19" from the root project
+npm ERR!
+npm ERR! Could not resolve dependency:
+npm ERR! peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm ERR! node_modules/react-day-picker
+npm ERR!   react-day-picker@"8.10.1" from the root project
+npm ERR!
+npm ERR! Fix the upstream dependency conflict, or retry
+npm ERR! this command with --force or --legacy-peer-deps
+npm ERR! to accept an incorrect (and potentially broken) dependency resolution.
+npm ERR!
+npm ERR!
+npm ERR! For a full report see:
+npm ERR! C:\Users\Maro\AppData\Local\npm-cache\_logs\2025-03-29T19_51_41_735Z-eresolve-report.txt
+
+npm ERR! A complete log of this run can be found in: C:\Users\Maro\AppData\Local\npm-cache\_logs\2025-03-29T19_51_41_735Z-debug-0.log
+
+PS C:\Users\e-hotelsV4>> npm install react@18 react-dom@18
+
+added 292 packages, and audited 293 packages in 28s
+
+43 packages are looking for funding
+  run `npm fund` for details
+
+1 critical severity vulnerability
+
+To address all issues, run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+PS C:\Users\Maro\Downloads\e-hotelsV4> npm audit fix --force
+npm WARN using --force Recommended protections disabled.
+npm WARN audit Updating next to 15.2.4, which is outside your stated dependency range.
+
+changed 3 packages, and audited 293 packages in 14s
+
+43 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\e-hotelsV4> npm run dev
+
+ ✓ Starting...
+ ✓ Ready in 1615ms
+

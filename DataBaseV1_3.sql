@@ -16,6 +16,17 @@ DELETE FROM ChaineTelephones; -- Suppression des téléphones des chaînes hôte
 DELETE FROM ChaineEmails; -- Suppression des emails des chaînes hôtelières
 DELETE FROM ChaineHoteliere;  -- Suppression des chaînes hôtelières enregistrées
 
+Contraintes de suppression
+DELETE FROM Reservation WHERE num_chambre = 101;
+DELETE FROM ArchiveLocation WHERE id_location = 1;
+DELETE FROM Location WHERE id_location = 1;
+DELETE FROM ArchiveReservation WHERE id_reservation = 1;
+DELETE FROM Reservation WHERE id_reservation = 1;
+DELETE FROM Location WHERE id_location = 1;
+DELETE FROM ChaineHoteliere WHERE id_chain = 1;
+DELETE FROM Chambre WHERE num_chambre = 101;
+
+
 -- Création des Chaînes Hôtelières --
 -- Insertion de 5 chaînes hôtelières avec des informations de base
 INSERT INTO ChaineHoteliere (id_chain, nom, adresse_bureau, nb_hotels) VALUES
@@ -181,13 +192,5 @@ INSERT INTO ArchiveReservation (id_archiveReservation, id_reservation) VALUES
 INSERT INTO ArchiveLocation (id_archiveLocation, id_location) VALUES
 (1, 1);
 
--- Contraintes de suppression
---DELETE FROM Reservation WHERE num_chambre = 101;
--- DELETE FROM ArchiveLocation WHERE id_location = 1;
--- DELETE FROM Location WHERE id_location = 1;
--- DELETE FROM ArchiveReservation WHERE id_reservation = 1;
--- DELETE FROM Reservation WHERE id_reservation = 1;
--- DELETE FROM Location WHERE id_location = 1;
--- DELETE FROM ChaineHoteliere WHERE id_chain = 1;
--- DELETE FROM Chambre WHERE num_chambre = 101;
+
 
